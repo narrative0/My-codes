@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>자바스크립트 그는 신이야!</title>
+</head>
+<body>
+  <script type="module">
+  </script>
+    <h2 id="clock">00:00:00</h2>
+    <form class="hidden" id="login-form">
+    <input required maxlength="15" type="text" placeholder="이름을 입력해주세요." />
+    <button id="login-button">로그인</button>
+  </form>
+  <h1 class="hidden" id="greeting"></h1>
+  <div class="wrapper">
+    <div class="search-input">
+      <input type="text" placeholder="검색어를 입력해주세요..">
+      <div class="autocom-box">
+        <li>유튜브</li>
+        <li>네이버</li>
+        <li>구글</li>
+        <li>크롬</li>
+      </div>
+      <div class="icon"><i class="fas fa-search"></i></div>
+    </div>
+  </div>
+  <div id="quote"> 
+    <span></span>
+    <span></span>
+  </div>
+  <form id="todo-form">
+    <div class="box">
+      <h3>일정</h3>
+      <input type="text" placeholder="일정 입력" required />
+      <input type="submit" placeholder="입력완료" required />
+    </div>
+  </form>
+  <ul id="todo-list"></ul>
+    <div id="weather">
+      <span></span>
+      <span></span>
+    </div>
+    <script src="js/all.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-storage.js"></script>
+
+<script>
+  import { initializeApp } from "firebase/app";
+var firebaseConfigg = {
+  apiKey: "AIzaSyDUfWZc_JnzQHi0MEyZPeGeJFL3cTTrhgI",
+  authDomain: "js-is-god.firebaseapp.com",
+  projectId: "js-is-god",
+  storageBucket: "js-is-god.appspot.com",
+  messagingSenderId: "10461319988",
+  appId: "1:10461319988:web:25941eafb856b446054b61",
+  measurementId: "G-29N61JH7GK"
+};
+</script>
+      </body>
+</html>
