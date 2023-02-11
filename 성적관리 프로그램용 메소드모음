@@ -1,0 +1,53 @@
+package Backend1;
+
+import java.util.Scanner;
+
+class Study {
+	
+	public Scanner sc() {
+		Scanner sc1 = new Scanner(System.in);
+		return sc1;
+	}
+	
+	public int scnum() {
+		int num = sc().nextInt();
+		return num;
+	}
+	
+	public String scstr() {
+		String str = sc().next();
+		return str;
+	}
+	public void clearScreen() {
+		for (int i = 0; i < 80; i++) {
+			System.out.println(" ");
+		}
+	}
+	public String Robi() {
+		String str = "";
+		str += "학생 성적관리 프로그램======================== \n";
+		str += "1. 평균 총합점수 \n";
+		str += "2. 석차백분율 \n";
+		str += "3. 등급 \n";
+		str += "\n";
+		str += " \n";
+		str += "  \n";
+		str += "    \n";
+
+	
+		str += "종료를 원하시면 '00'을 입력해주세요 : \n";
+		
+		return str;
+		
+	}
+	public void goMain() {
+		System.out.println("메인으로 돌아가기를 원하시면 0을 입력해주세요");
+		int gomain = sc().nextInt();
+		if (gomain == 0) {
+			clearScreen();
+		} else {
+			System.out.println("허용되지 않은 숫자입니다. 프로그램을 강제 종료합니다.");
+			
+		}
+	}
+}
